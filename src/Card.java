@@ -10,6 +10,18 @@ public class Card {
         this.pointValue = pointValue;
     }
 
+    public String getRank() {
+        return this.rank;
+    }
+
+    public String getSuit() {
+        return this.suit;
+    }
+
+    public int getPointValue() {
+        return this.pointValue;
+    }
+
     public boolean equals(Card otherCard) {
         return this.pointValue == otherCard.pointValue;
     }
