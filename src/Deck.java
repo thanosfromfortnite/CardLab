@@ -1,7 +1,7 @@
 import java.util.*;
 public class Deck {
-    private List<Card> unDealt;
-    private List<Card> dealt;
+    private ArrayList<Card> unDealt = new ArrayList<Card>();
+    private ArrayList<Card> dealt = new ArrayList<Card>();
 
     public Deck(String[] rank, String[] suit, int[] pointValue) {
         for (int i = 0; i < rank.length; i ++) {
