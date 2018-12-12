@@ -30,13 +30,13 @@ public class Deck {
     public void shuffle() {
         for (int i = 0; i < dealt.size(); i ++) {
             unDealt.add(dealt.get(0));
-            unDealt.remove(i);
+            dealt.remove(0);
         }
-        for (int i = 0; i < unDealt.size(); i ++) {
-            int r = (int) (Math.random() * unDealt.size());
+        for (int k = 51; k > 0; k --) {
+            int r = (int) (Math.random() * (k + 1));
             Card c = unDealt.get(r);
-            unDealt.remove(i);
-            unDealt.add(c);
+            unDealt.set(r, unDealt.get(k));
+            unDealt.set(k, c);
         }
     }
 }
