@@ -10,11 +10,12 @@ public class DeckTester {
             for (int j = 0; j < listOfSuits.length; j++) {
                 ranks[(i * 4) + j] = listOfRanks[i];
                 suits[(i * 4) + j] = listOfSuits[j];
-                powerValues[(i * 4) + j] = (i * 4) + j;
+                powerValues[(i * 4) + j] = (i * 4) + j + 1;
+                System.out.println(listOfRanks[i] + listOfSuits[j] + ((i * 4) + j + 1));
             }
         }
         Deck deck = new Deck(ranks, suits, powerValues);
-        for (int i = 0; i < 53; i++) {
+        for (int i = 0; i < 52; i++) {
             System.out.println(deck.deal().toString());
         }
     }

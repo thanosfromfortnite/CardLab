@@ -4,12 +4,8 @@ public class Deck {
     private ArrayList<Card> dealt = new ArrayList<Card>();
 
     public Deck(String[] rank, String[] suit, int[] pointValue) {
-        for (int i = 0; i < rank.length; i ++) {
-            for (int j = 0; j < suit.length; j ++) {
-                for (int k = 0; k < pointValue.length; k ++) {
-                    unDealt.add(new Card(rank[i], suit[j], pointValue[k]));
-                }
-            }
+        for (int i = 0; i < pointValue.length; i ++) {
+            unDealt.add(new Card(rank[i], suit[i], pointValue[i]));
         }
     }
 
