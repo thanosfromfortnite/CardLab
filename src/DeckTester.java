@@ -14,14 +14,14 @@ public class DeckTester {
             }
         }
         Deck deck = new Deck(ranks, suits, powerValues);
-        System.out.println("UNSHUFFLED");
+        System.out.println("================= \nUNSHUFFLED");
         for (int i = 0; i < 52; i  ++) {
             System.out.println(deck.deal().toString());
         }
 
         deck.shuffle();
 
-        System.out.println("SHUFFLED");
+        System.out.println("================= \nSHUFFLED");
         for (int i = 0; i < 52; i ++) {
             System.out.println(deck.deal().toString());
         }

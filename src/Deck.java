@@ -28,7 +28,7 @@ public class Deck {
     }
 
     public void shuffle() {
-        for (int i = 0; i < dealt.size(); i ++) {
+        while (dealt.size() > 0) {
             unDealt.add(dealt.get(0));
             dealt.remove(0);
         }
